@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:id="@+id/coordinator"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:fitsSystemWindows="true"
+
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/colorAccent"
+                app:expandedTitleMarginStart="28dp"
+                app:expandedTitleMarginBottom="20dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@color/colorAccent"
+                app:title="李家岩水库">
+
+            <ImageView
+                    android:id="@+id/main.backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_collapseMode="parallax"/>
+
+
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:fitsSystemWindows="true"
+                    app:contentInsetEnd="0dp"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:text="四川省李家岩水库工程是国家172重大水利项目，是成都市第二水源保障工程，也是成都环境集团原水战略中第一个水库工程，为大（2）型水库工程，总投资48.1亿元。 \n\n水库位于四川省成都市崇州市怀远镇青峰岭社区境内岷江一级支流西河上游文井江山区河段，工程开发任务以城乡供水为主，并为成都市供水提供应急备用水源，兼顾灌溉、发电等综合利用。 \n\n水库总库容1.73亿m³，设计洪水位764.14m，校核洪水位764.85m。正常蓄水位763.00m，正常蓄水位以下库容1.63亿m³；正常运行死水位727.00m，正常运行死库容0.49亿m³；最低运行死水位695.00m，最低运行死库容728万m³；正常运行调洪库容829万m³，兴利库容1.16亿m³，应急备用库容0.42亿m³。灌溉面积为9.36万亩，水库多年平均可供水量2.72亿m³。 枢纽工程由挡水建筑物、泄洪建筑物、供水建筑物、生态流量泄放设施及坝后电站组成。\n\n拦河坝采用混凝土面板堆石坝，坝顶高程766.80m，坝顶以上设有1.2m高防浪墙，墙顶高程768.00m，坝顶宽度12.0m，最大坝高123.0m，坝轴线全长373.0m。上游坝坡坡比为1:1.5，下游坝坡坡比在730m高程以上为1:1.6，以下为1:1.5。在下游右岸岸坡上设置上坝公路，公路宽度为7.0m。\n\n本工程采用右岸表孔溢洪道、右岸底孔泄洪放空洞联合泄洪。 右岸表孔溢洪道布置于大坝右岸，由引渠段、闸室段、泄槽段（缓坡段+陡槽段）、挑坎段及下游渠道段组成，溢洪道整体在平面上呈直线布置，总长799.2m。"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
